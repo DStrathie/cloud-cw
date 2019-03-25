@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cities with Real Weather Information</title>
+    <!-- *** Load the jQuery and jQueryUI libraries here. *** -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- *** Load jQueryUI default CSS from Google CDN. *** -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"/>
+
+    <!--  Load the LeafletJS API. -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+            integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+            crossorigin=""></script>
+
+    <!-- Load local CSS and JavaScript. -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="script/index.js"></script>
+</head>
+
+<body>
+<section id="main">
+    <div class="login">
+			<span>
+				Username <input type="text" id="user">
+			</span>
+        <div>
+            <button id="login">login</button>
+            <button id="newuser">new user</button>
+        </div>
+    </div>
+    <div class="latlong">
+			<span>
+				lat:<input id="lat" type="text">° long:<input id="long" type="text"> °
+			</span>
+        <button id="checkin">Check In</button>
+    </div>
+    <section class="lists">
+        <div id="subs">
+            <h1>List of Subscriptions</h1>
+            <ul id="subslist">
+            </ul>
+            <h1>List of Requests</h1>
+            <ul id="requestslist">
+            </ul>
+            <button id="sendrequest">Send Subscription Request</button>
+            <button id="refresh">Refresh</button>
+        </div>
+        <div id="request">
+            <section id="requestbox">
+                <section>
+                    Subscription Name:
+                    <input type="text" id="friendname">
+                </section>
+                <section>
+                    <button id="requestsend">Send Request</button>
+                    <button id="cancelrequest">Cancel</button>
+                </section>
+            </section>
+        </div>
+    </section>
+
+    <section id="newuserbox">
+        <section>
+            User Name:
+            <input type="text" id="newusername">
+        </section>
+
+        <section>
+            <button id="adduser">Save User</button>
+            <button id="usercancel">Cancel</button>
+        </section>
+    </section>
+
+    <section id="map"></section>
+
+    <div id="confirm">
+        <p></p>
+    </div>
+</section>
+
+</body>
+
+</html>

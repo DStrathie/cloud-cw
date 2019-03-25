@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    font-size: 16pt;
+}
+
+#cityDetails {
+    text-align: center;
+}
+
+#cityDetails section {
+    padding: 5px;
+}
+
+#map {
+    width: 640px;
+    height: 480px;
+    margin: 1em;
+}
+
+.selected {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.small {
+    font-size: 10pt;
+    display: inline;
+}
+
+.latlong {
+    display: inline;
+}
+
+.lists {
+
+    float: right;
+
+}
+
+#main {
+    align-content: center;
+    width: 60%;
+}
+
+#login {
+    margin-bottom: 2em;
+}
